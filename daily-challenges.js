@@ -23,3 +23,44 @@
 //     }
 // }
 
+///// W2D6: Find the Range
+// let nums = [1, 4, 11, 2, 37, -4];
+// let small = nums[0];
+// let large = nums[0];
+
+// for (let i = 0; i < nums.length; i++) {
+//     if (nums[i] < small) {
+//         small = nums[i];
+//     } else if (nums[i] > large) {
+//         large = nums[i];
+//     }
+// }
+// console.log(small, large);
+
+///// W2D7: Add to Zero
+// const addToZero = (nums) => {
+//     let doesAddToZero = false;
+//     for (let i = 0; i < nums.length-1; i++) {
+//         for (let j = i+1; j < nums.length; j++) {
+//             if (nums[i] + nums[j] === 0) {
+//                 doesAddToZero = true;
+//             }
+//         }
+//     }
+//     return doesAddToZero;
+// }
+// console.log(addToZero([0, 1, 2, 3, 4, 5]));
+
+///// W2D8: Find Lucky Number
+// const findLuckyNums = (n) => {
+//     let luckyNums = [];
+//     let possibleNums = [0, 1, 2, 3, 4, 5, 6, 7, 8, 9, 10];
+
+//     for (let i = 0; i < n; i++) {
+//         let index = Math.floor(Math.random() * possibleNums.length);
+//         luckyNums.push(possibleNums[index]);
+//         possibleNums.splice(index, 1);
+//     }
+//     return luckyNums;
+// }
+// console.log(findLuckyNums(5));
